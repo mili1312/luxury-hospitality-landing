@@ -25,7 +25,7 @@ body{
   margin: 0 auto;
 }
 
-/* ================= HEADER ================= */
+
 
 .header{
   position: sticky;
@@ -106,7 +106,7 @@ body{
   border-radius: 2px;
 }
 
-/* ================= SECTIONS ================= */
+
 
 .section{
   padding: 80px 0;
@@ -116,7 +116,7 @@ body{
   background: var(--panel-2);
 }
 
-/* ================= HERO ================= */
+
 
 .hero{
   position: relative;
@@ -125,27 +125,26 @@ body{
   padding-bottom: 12px;
 }
 
-/* ✅ Background ΜΟΝΟ στο Home - δεν επηρεάζει layout */
+
 .hero-bg{
   position: absolute;
   inset: 0;
   background-image: url("images/pelagus.png");
   background-repeat: no-repeat;
 
-  /* ✅ πιο μέσα, να μη κόβεται */
+  
   background-position: 78% 52%;
 
-  /* ✅ σωστό μέγεθος (ούτε τεράστιο ούτε μικρό) */
   background-size: clamp(420px, 52vw, 760px);
 
-  /* ✅ πιο luxury / διακριτικό */
+  
   opacity: 0.30;
 
   pointer-events: none;
   z-index: 0;
 }
 
-/* περιεχόμενο πάνω από το background */
+
 .hero .container{
   position: relative;
   z-index: 2;
@@ -222,7 +221,6 @@ body{
   color: var(--muted);
 }
 
-/* δεξιά κάρτα στο hero */
 .hero-card{
   background:#ffffff;
   border-radius: var(--radius);
@@ -237,7 +235,7 @@ body{
   margin: 12px 0;
 }
 
-/* ================= CARDS ================= */
+
 
 .card,
 .info-box,
@@ -272,7 +270,7 @@ h3{ margin:0 0 8px; }
   line-height: 1.6;
 }
 
-/* ================= INFO / LINKS ================= */
+
 
 .list{
   margin: 10px 0 0;
@@ -290,7 +288,7 @@ h3{ margin:0 0 8px; }
   border-bottom-color: rgba(0,0,0,.32);
 }
 
-/* ================= GALLERY (logos) ================= */
+
 
 .gallery-wrap{
   margin-top: 26px;
@@ -328,7 +326,7 @@ h3{ margin:0 0 8px; }
   display:block;
 }
 
-/* ================= CONTACT ================= */
+
 
 .contact-grid{
   display:grid;
@@ -371,7 +369,6 @@ textarea:focus{
   flex-wrap: wrap;
 }
 
-/* ================= FOOTER ================= */
 
 .footer{
   border-top:1px solid var(--line);
@@ -387,7 +384,7 @@ textarea:focus{
   gap: 10px;
 }
 
-/* ================= RESPONSIVE ================= */
+
 
 @media (max-width: 900px){
   .hero-grid,
@@ -402,7 +399,7 @@ textarea:focus{
   }
 }
 
-/* κινητό: background να μην γίνεται “γίγαντας” */
+
 @media (max-width: 768px){
   .hero-bg{
     background-position: 50% 30%;
@@ -411,7 +408,6 @@ textarea:focus{
   }
 }
 
-/* ================= iOS-STYLE MOBILE HEADER + LEFT DRAWER ================= */
 
 @media (max-width: 720px){
 
@@ -460,4 +456,5 @@ textarea:focus{
   .nav-links.open{
     left: 0;
   }
+
 }
